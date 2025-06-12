@@ -313,6 +313,7 @@ body {
 .pillars-section {
   padding: 4rem 0 6rem;
   background: #f9fafb;
+  margin-inline: auto;
 }
 
 .section-header {
@@ -339,13 +340,14 @@ body {
 
 .section-title {
   font-size: 2rem;
-  font-weight: bold;
-  color: #1f2937;
+  font-weight: normal;
+  color: #616872;
 }
 
 .title-highlight {
   color: #fb923c;
   font-style: italic;
+  font-weight: bold;
 }
 
 .navigation-buttons {
@@ -430,8 +432,8 @@ body {
 
 .pillar-image-icon {
   object-fit: fill;      /* fills container, crops excess */
-  width: 300px;            /* ensures consistency */
-  height: 300px;
+  width: 40px;            /* ensures consistency */
+  height: 40px;
 }
 
 .pillar-icon {

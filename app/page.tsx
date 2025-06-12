@@ -1,49 +1,59 @@
-"use client"
-import { Search, MapPin, CreditCard, ChevronLeft, ChevronRight } from "lucide-react";
+"use client";
+import {
+  Search,
+  MapPin,
+  CreditCard,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 import "./styles.css";
 import Image from "next/image";
 
-
-
 export default function LandingPage() {
   const pillars = [
-  {
-    title: "Nutrition",
-    description: "Evidence supports the use of a whole food, plant-predominant diet to prevent, treat and reverse chronic illness.",
-    time: "121/80 mmHg",
-    icon: "nutrition.png",
-  },
-  {
-    title: "Physical activity",
-    description: "Regular physical activity is key to managing weight, improving mental health, and reducing risk of chronic disease.",
-    time: "32 minutes",
-    icon: "physical_act.png",
-  },
-  {
-    title: "Restorative sleep",
-    description: "Consistent, quality sleep is essential for cognitive function and physical health.",
-    time: "8 hours",
-    icon: "sleep.png",
-  },
-  {
-    title: "Stress management",
-    description: "Managing stress improves immunity and is essential for optimal health and mental health.",
-    time: "90 days",
-    icon: "stress.png",
-  },
-  {
-    title: "Social connection",
-    description: "Strong social connections are associated with a lower risk of many chronic diseases and behavioral health issues.",
-    time: "Feeling better",
-    icon: "social.png",
-  },
-  {
-    title: "Substance abuse",
-    description: "Avoiding risky substances like tobacco and limiting alcohol intake are key for long-term health.",
-    time: "62 days",
-    icon: "substance.png",
-  },
-];
+    {
+      title: "Nutrition",
+      description:
+        "Evidence supports the use of a whole food, plant-predominant diet to prevent, treat and reverse chronic illness.",
+      time: "121/80 mmHg",
+      image: "nutrition.png",
+    },
+    {
+      title: "Physical activity",
+      description:
+        "Regular physical activity is key to managing weight, improving mental health, and reducing risk of chronic disease.",
+      time: "32 minutes",
+      image: "physical_act.png",
+    },
+    {
+      title: "Restorative sleep",
+      description:
+        "Consistent, quality sleep is essential for cognitive function and physical health.",
+      time: "8 hours",
+      image: "sleep.png",
+    },
+    {
+      title: "Stress management",
+      description:
+        "Managing stress improves immunity and is essential for optimal health and mental health.",
+      time: "90 days",
+      image: "stress.png",
+    },
+    {
+      title: "Social connection",
+      description:
+        "Strong social connections are associated with a lower risk of many chronic diseases and behavioral health issues.",
+      time: "Feeling better",
+      image: "social.png",
+    },
+    {
+      title: "Substance abuse",
+      description:
+        "Avoiding risky substances like tobacco and limiting alcohol intake are key for long-term health.",
+      time: "62 days",
+      image: "substance.png",
+    },
+  ];
 
   return (
     <div className="landing-page">
@@ -98,9 +108,12 @@ export default function LandingPage() {
             <div className="hero-left">
               <div className="hero-text">
                 <h1 className="hero-title">
-                  Book an appointment with <span className="highlight">lifestyle medicine</span> experts
+                  Book an appointment with{" "}
+                  <span className="highlight">lifestyle medicine</span> experts
                 </h1>
-                <p className="hero-subtitle">Optimize your lifestyle and reverse chronic diseases.</p>
+                <p className="hero-subtitle">
+                  Optimize your lifestyle and reverse chronic diseases.
+                </p>
               </div>
 
               {/* Search Form */}
@@ -108,15 +121,27 @@ export default function LandingPage() {
                 <div className="search-inputs">
                   <div className="input-group">
                     <Search className="input-icon" size={20} />
-                    <input type="text" placeholder="Condition..." className="search-input" />
+                    <input
+                      type="text"
+                      placeholder="Condition..."
+                      className="search-input"
+                    />
                   </div>
                   <div className="input-group">
                     <MapPin className="input-icon" size={20} />
-                    <input type="text" placeholder="Location" className="search-input" />
+                    <input
+                      type="text"
+                      placeholder="Location"
+                      className="search-input"
+                    />
                   </div>
                   <div className="input-group">
                     <CreditCard className="input-icon" size={20} />
-                    <input type="text" placeholder="Insurance" className="search-input" />
+                    <input
+                      type="text"
+                      placeholder="Insurance"
+                      className="search-input"
+                    />
                   </div>
                 </div>
                 <button className="search-btn">
@@ -131,18 +156,34 @@ export default function LandingPage() {
               <div className="image-grid">
                 <div className="image-column">
                   <div className="image-card orange">
-                    <img src="/assets/homepage/image1.png" alt="image1" className="image-icon" />
+                    <img
+                      src="/assets/homepage/image1.png"
+                      alt="image1"
+                      className="image-icon"
+                    />
                   </div>
                   <div className="image-card blue">
-                    <img src="/assets/homepage/image2.png" alt="image2" className="image-icon" />
+                    <img
+                      src="/assets/homepage/image2.png"
+                      alt="image2"
+                      className="image-icon"
+                    />
                   </div>
                 </div>
                 <div className="image-column offset">
                   <div className="image-card green">
-                    <img src="/assets/homepage/image3.png" alt="image3" className="image-icon" />
+                    <img
+                      src="/assets/homepage/image3.png"
+                      alt="image3"
+                      className="image-icon"
+                    />
                   </div>
                   <div className="image-card purple">
-                    <img src="/assets/homepage/image4.png" alt="image4" className="image-icon" />
+                    <img
+                      src="/assets/homepage/image4.png"
+                      alt="image4"
+                      className="image-icon"
+                    />
                   </div>
                 </div>
               </div>
@@ -159,7 +200,8 @@ export default function LandingPage() {
             <p className="section-label">HOW IT WORKS</p>
             <div className="section-title-row">
               <h2 className="section-title">
-                <span className="title-highlight">Lifestyle as medicine:</span> The six pillars
+                <span className="title-highlight">Lifestyle as medicine:</span>{" "}
+                The six pillars
               </h2>
               <div className="navigation-buttons">
                 <button className="nav-btn">
@@ -175,7 +217,10 @@ export default function LandingPage() {
           {/* Pillars Navigation */}
           <div className="pillars-nav">
             {pillars.map((pillar, index) => (
-              <button key={pillar.title} className={`pillar-badge ${index === 0 ? "active" : ""}`}>
+              <button
+                key={pillar.title}
+                className={`pillar-badge ${index === 0 ? "active" : ""}`}
+              >
                 {pillar.title}
               </button>
             ))}
@@ -187,14 +232,22 @@ export default function LandingPage() {
               <div key={pillar.title} className="pillar-card">
                 <div className="pillar-image">
                   <div className="pillar-icon">
-                    <Image
-                    src={`/assets/icons/${pillar.icon}`}
-                    alt={pillar.title}
-                    width={64}
-                    height={64}
-                    objectFit="cover"
-                    className="pillar-image-icon"
-                    />
+                    {pillar.image ? (
+                      <Image
+                        src={`/assets/icons/${pillar.image}`}
+                        alt={pillar.title}
+                        width={40}
+                        height={40}
+                        objectFit="cover"
+                        className="pillar-image-icon"
+                      />
+                    ) : (
+                      <div
+                        style={{ width: 64, height: 64, background: "#ccc" }}
+                      >
+                        No Image
+                      </div>
+                    )}
                   </div>
                   <div className="pillar-time">{pillar.time}</div>
                 </div>
@@ -219,7 +272,9 @@ export default function LandingPage() {
                 </div>
                 <span className="logo-text">ProVital</span>
               </div>
-              <p className="footer-description">Empowering health through lifestyle medicine.</p>
+              <p className="footer-description">
+                Empowering health through lifestyle medicine.
+              </p>
             </div>
             <div className="footer-column">
               <h4 className="footer-title">For Patients</h4>
@@ -288,5 +343,5 @@ export default function LandingPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
