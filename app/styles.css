@@ -371,7 +371,7 @@ body {
 }
 
 .nav-btn:hover {
-  background: #f3f4f6;
+  background: #ef811a;
 }
 
 .pillars-nav {
@@ -393,7 +393,7 @@ body {
 }
 
 .pillar-badge.active {
-  background: #1f2937;
+  background: #0d4a9f;
   color: white;
 }
 
