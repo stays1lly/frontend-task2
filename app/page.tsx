@@ -231,24 +231,20 @@ export default function LandingPage() {
             {pillars.map((pillar, index) => (
               <div key={pillar.title} className="pillar-card">
                 <div className="pillar-image">
-                  <div className="pillar-icon">
-                    {pillar.image ? (
-                      <Image
-                        src={`/assets/icons/${pillar.image}`}
-                        alt={pillar.title}
-                        width={40}
-                        height={40}
-                        objectFit="cover"
-                        className="pillar-image-icon"
-                      />
-                    ) : (
-                      <div
-                        style={{ width: 64, height: 64, background: "#ccc" }}
-                      >
-                        No Image
-                      </div>
-                    )}
-                  </div>
+                  {pillar.image ? (
+                    <Image
+                      src={`/assets/icons/${pillar.image}`}
+                      alt={pillar.title}
+                      width={350}
+                      height={320}
+                      objectFit="cover"
+                      className="pillar-image"
+                    />
+                  ) : (
+                    <div style={{ width: 64, height: 64, background: "#ccc" }}>
+                      No Image
+                    </div>
+                  )}
                   <div className="pillar-time">{pillar.time}</div>
                 </div>
                 <div className="pillar-content">
