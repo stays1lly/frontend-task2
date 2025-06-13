@@ -236,7 +236,7 @@ export default function LandingPage() {
                       src={`/assets/icons/${pillar.image}`}
                       alt={pillar.title}
                       width={350}
-                      height={320}
+                      height={310}
                       objectFit="cover"
                       className="pillar-image"
                     />
