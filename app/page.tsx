@@ -8,9 +8,19 @@ import {
 } from "lucide-react";
 import "./styles.css";
 import Image from "next/image";
+import { FC } from "react";
 
-export default function LandingPage() {
-  const pillars = [
+// Define a type for the pillars
+type Pillar = {
+  title: string;
+  description: string;
+  time: string;
+  image: string;
+};
+
+// Define the component (no props needed, hence FC without generics)
+const LandingPage: FC = (): JSX.Element => {
+  const pillars: Pillar[] = [
     {
       title: "Nutrition",
       description:
@@ -104,7 +114,6 @@ export default function LandingPage() {
       <section className="hero">
         <div className="container">
           <div className="hero-content">
-            {/* Left Content */}
             <div className="hero-left">
               <div className="hero-text">
                 <h1 className="hero-title">
@@ -151,7 +160,7 @@ export default function LandingPage() {
               </div>
             </div>
 
-            {/* Right Images */}
+            {/* Hero Images */}
             <div className="hero-right">
               <div className="image-grid">
                 <div className="image-column">
@@ -193,7 +202,7 @@ export default function LandingPage() {
         <div className="hero-gradient"></div>
       </section>
 
-      {/* How It Works Section */}
+      {/* Pillars Section */}
       <section className="pillars-section">
         <div className="container">
           <div className="section-header">
@@ -214,9 +223,8 @@ export default function LandingPage() {
             </div>
           </div>
 
-          {/* Pillars Navigation */}
           <div className="pillars-nav">
-            {pillars.map((pillar, index) => (
+            {pillars.map((pillar: Pillar, index: number) => (
               <button
                 key={pillar.title}
                 className={`pillar-badge ${index === 0 ? "active" : ""}`}
@@ -226,9 +234,8 @@ export default function LandingPage() {
             ))}
           </div>
 
-          {/* Pillars Grid */}
           <div className="pillars-grid">
-            {pillars.map((pillar, index) => (
+            {pillars.map((pillar: Pillar) => (
               <div key={pillar.title} className="pillar-card">
                 <div className="pillar-image">
                   {pillar.image ? (
@@ -272,6 +279,7 @@ export default function LandingPage() {
                 Empowering health through lifestyle medicine.
               </p>
             </div>
+
             <div className="footer-column">
               <h4 className="footer-title">For Patients</h4>
               <ul className="footer-links">
@@ -292,6 +300,7 @@ export default function LandingPage() {
                 </li>
               </ul>
             </div>
+
             <div className="footer-column">
               <h4 className="footer-title">For Doctors</h4>
               <ul className="footer-links">
@@ -312,6 +321,7 @@ export default function LandingPage() {
                 </li>
               </ul>
             </div>
+
             <div className="footer-column">
               <h4 className="footer-title">Company</h4>
               <ul className="footer-links">
@@ -340,4 +350,6 @@ export default function LandingPage() {
       </footer>
     </div>
   );
-}
+};
+
+export default LandingPage;
