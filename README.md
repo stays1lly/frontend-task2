@@ -1,6 +1,6 @@
 # 🩺 ProVital - Lifestyle Medicine Appointment Platform
 
-This is a frontend application for ProVital, a platform for booking appointments with lifestyle medicine experts. Built with **Next.js**, **TypeScript**, and **Tailwind CSS**.
+This is a frontend application for ProVital, a platform for booking appointments with lifestyle medicine experts. Built with **Next.js**, **TypeScript** and **Vanilla CSS**.
 
 ## 🛠️ Tech Stack
 
