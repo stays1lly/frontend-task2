@@ -10,7 +10,7 @@ import "./styles.css";
 import Image from "next/image";
 import { FC } from "react";
 
-// Define a type for the pillars
+//Defining type
 type Pillar = {
   title: string;
   description: string;
@@ -18,7 +18,7 @@ type Pillar = {
   image: string;
 };
 
-// Define the component (no props needed, hence FC without generics)
+//Define Components
 const LandingPage: FC = (): JSX.Element => {
   const pillars: Pillar[] = [
     {
