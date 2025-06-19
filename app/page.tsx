@@ -18,7 +18,6 @@ type Pillar = {
   image: string;
 };
 
-//Define Components
 const LandingPage: FC = (): JSX.Element => {
   const pillars: Pillar[] = [
     {
